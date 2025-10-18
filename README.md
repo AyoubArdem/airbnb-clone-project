@@ -27,7 +27,7 @@ The Airbnb Clone Back-End is a full-stack server-side development project focuse
 
 
 
-##  TeamRoles – Roles & Responsibilities
+##  Team Roles 
 
 To ensure smooth collaboration and efficient development, the team is structured around key roles that reflect real-world software engineering dynamics. Each member contributes to a specific domain of the back-end system, aligned with their expertise and project goals.
 
