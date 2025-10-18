@@ -170,3 +170,20 @@ All payment-related endpoints are protected with HTTPS and token-based validatio
 ###  User Privacy  
 User profiles and personal data are protected through access controls and data minimization strategies, ensuring compliance with privacy standards.
 
+
+
+##  CI/CD Pipeline
+
+Continuous Integration and Continuous Deployment (CI/CD) pipelines are essential for automating the software development lifecycle. They ensure that code changes are tested, integrated, and deployed efficiently and reliably across environments.
+
+In the context of the Airbnb Clone Back-End project, CI/CD pipelines help maintain code quality, reduce manual errors, and accelerate delivery. Every time a developer pushes code, automated workflows validate the changes, run tests, and deploy updates—keeping the system stable and production-ready.
+
+### Tools Used
+
+- GitHub Actions: Automates testing, linting, and deployment workflows directly from the GitHub repository.
+- Docker: Packages the application into containers for consistent deployment across environments.
+- Jenkins: Manages build pipelines and integrates with testing and deployment tools.
+- Kubernetes: Orchestrates containerized services, ensuring scalability and fault tolerance.
+
+These tools work together to streamline development, improve collaboration, and support continuous delivery of high-quality backend services.
+
