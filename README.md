@@ -61,3 +61,72 @@ Ensures code quality through automated testing and manual validation. Responsibl
 - Technologies: Pytest, Sentry, Bugzilla  
 - Tasks: Test coverage, regression testing, bug reporting and resolution
 
+
+##  Technology Stack
+
+This project uses a robust and modern back-end technology stack to ensure scalability, security, and performance.
+
+| Technology     | Purpose                                                                 |
+|----------------|-------------------------------------------------------------------------|
+| Django     | Web framework for building RESTful APIs and managing server-side logic. |
+| PostgreSQL | Relational database system for storing structured data efficiently.     |
+| Docker     | Containerization tool to package and deploy the application consistently. |
+| Kubernetes | Orchestration platform for managing containerized services at scale.    |
+| GraphQL    | Query language for APIs, enabling flexible and efficient data retrieval.|
+| GitHub Actions | CI/CD automation for testing, building, and deploying code.         |
+| Jenkins    | CI/CD tool for continuous integration and delivery pipelines.           |
+| Redis      | In-memory data store used for caching and performance optimization.     |
+| Pytest     | Testing framework for writing unit and integration tests.               |
+
+
+
+##  Database Design
+
+The database is structured to support core Airbnb-like functionalities, with clear relationships between entities.
+
+### Key Entities and Fields
+
+#### 1. User
+- `id`: Unique identifier  
+- `name`: Full name  
+- `email`: Contact email  
+- `password_hash`: Encrypted password  
+- `role`: Host or Guest  
+
+#### 2. Property
+- `id`: Unique identifier  
+- `title`: Property name  
+- `location`: Address or city  
+- `price_per_night`: Rental cost  
+- `owner_id`: Linked to User  
+
+#### 3. Booking
+- `id`: Unique identifier  
+- `user_id`: Linked to User  
+- `property_id`: Linked to Property  
+- `start_date`: Check-in date  
+- `end_date`: Check-out date  
+
+#### 4. Review
+- `id`: Unique identifier  
+- `user_id`: Reviewer  
+- `property_id`: Reviewed property  
+- `rating`: Score (1–5)  
+- `comment`: Text feedback  
+
+#### 5. Payment
+- `id`: Unique identifier  
+- `booking_id`: Linked to Booking  
+- `amount`: Total paid  
+- `payment_method`: Card, PayPal, etc.  
+- `status`: Paid, Pending, Failed  
+
+###  Entity Relationships
+
+- A User can own multiple Properties.  
+- A User can make multiple Bookings.  
+- A Booking is linked to one Property and one User.  
+- A Review is written by a User for a Property.  
+- A Payment is associated with a Booking.
+
+
