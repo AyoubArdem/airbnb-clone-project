@@ -130,3 +130,43 @@ The database is structured to support core Airbnb-like functionalities, with cle
 - A Payment is associated with a Booking.
 
 
+##  Feature Breakdown
+
+The Airbnb Clone Back-End includes several core features that replicate the functionality of a real-world booking platform. Each feature is designed to be modular, scalable, and secure.
+
+###  User Management  
+Handles user registration, login, profile updates, and role assignment (host or guest). This feature ensures secure access and personalized experiences for each user.
+
+###  Property Management  
+Allows hosts to create, update, and delete property listings. Includes fields for location, pricing, availability, and amenities, enabling dynamic content management.
+
+###  Booking System  
+Enables guests to book available properties based on date and location. Includes conflict detection, booking history, and cancellation logic to ensure smooth operations.
+
+###  Payment Integration  
+Processes payments securely using third-party services. Supports multiple payment methods and tracks transaction status for each booking.
+
+###  Review System  
+Allows users to leave ratings and comments on properties they’ve booked. Helps maintain quality and trust across the platform.
+
+
+
+## API Security
+
+Securing the back-end APIs is essential to protect user data, financial transactions, and system integrity. The project implements multiple layers of security to ensure safe and reliable operations.
+
+###  Authentication & Authorization  
+We use JWT and OAuth2 to verify user identity and control access to resources. This ensures that only authorized users can perform sensitive actions like booking or listing properties.
+
+###  Rate Limiting  
+Prevents abuse and denial-of-service attacks by limiting the number of requests a user or IP can make within a given timeframe.
+
+###  Data Protection  
+Sensitive data such as passwords and payment details are encrypted and stored securely. CSRF and XSS protections are in place to prevent common web vulnerabilities.
+
+###  Payment Security  
+All payment-related endpoints are protected with HTTPS and token-based validation to ensure secure financial transactions.
+
+###  User Privacy  
+User profiles and personal data are protected through access controls and data minimization strategies, ensuring compliance with privacy standards.
+
